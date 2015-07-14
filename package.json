@@ -11,6 +11,8 @@
   "dependencies": {
     "handlebars": "^3.0.3",
     "hapi": "^8.8.0",
+    "joi": "^6.5.0",
+    "lout": "^6.2.3",
     "wreck": "^6.0.0"
   }
 }
