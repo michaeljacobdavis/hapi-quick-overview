@@ -13,10 +13,7 @@ exports.register = function (plugin, options, next) {
         method: 'GET',
         path: '/',
         handler: function (request, reply) {
-            reply.view('index', {
-                heading: 'Hello!',
-                content: 'Hapi templates!'
-            });
+            reply.view('index');
         }
     });
 
