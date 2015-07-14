@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script>
+    var req = new XMLHttpRequest();
+    req.onload = function () {
+        var img = new Image();
+        img.src = JSON.parse(this.response).data.image_original_url;
+
+        document.body.appendChild(img);
+    };
+
+    req.open('get', '/api/giphy/roulette', true);
+    req.send();
+</script>
